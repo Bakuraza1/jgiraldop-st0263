@@ -11,4 +11,4 @@ pip3 install grpcio
 pip3 install grpcio-tools
 pip3 install protobuf==3.20.*
 pip3 install flask
-pip3 intall pika
+pip3 install pika
