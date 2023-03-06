@@ -1,0 +1,9 @@
+{
+    "request_queue":"rpc_request",
+    "response_queue":"rpc_response",
+    "rpc_port":"50051",
+    "rpc_address":"localhost",
+    "server_port":"8080",
+    "server_address":"0.0.0.0"
+}
+

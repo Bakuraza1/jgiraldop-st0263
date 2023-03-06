@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+//Messages
+
+message Files{
+    string Files = 1;
+}
+
+message Nulo{
+}
+
+service getFiles{
+    rpc Ready(Nulo) returns (Nulo);
+    rpc ListFiles(Nulo) returns (Files);
+    rpc FindFiles(Files) returns (Files);
+}
