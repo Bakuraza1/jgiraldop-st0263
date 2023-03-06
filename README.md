@@ -114,7 +114,7 @@ El usuario posee multiples endpoints para probar la aplicacion.
 NOTA: Hay mas endpoints implementados en la aplicacion pero estos se hicieron con fines de testing. como (testRPC/, textMOM/, getFileMOM/<string>, getFileRPC<string>)
 
 - /listFiles: Lista los archivos del microservicio
-- /getFiles/<string: dir>: obtiene archivos que tengan cierto nombre (no incluir extensiones). Para buscar dentro de carpetas usamos la sintaxis carpeta.archivo
+- /getFile/<string: dir>: obtiene archivos que tengan cierto nombre (no incluir extensiones). Para buscar dentro de carpetas usamos la sintaxis carpeta.archivo
 - /: Nos retornara alive si el servidor esta vivo
 
 
