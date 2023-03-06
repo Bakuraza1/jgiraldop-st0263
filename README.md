@@ -74,7 +74,7 @@ En general se tiene un archivo de configuracion para al API gateway y para cada 
 - dir_path: path del directorio que posee los archivos
 
 ## opcional - detalles de la organización del código por carpetas o descripción de algún archivo. (ESTRUCTURA DE DIRECTORIOS Y ARCHIVOS IMPORTANTE DEL PROYECTO, comando 'tree' de linux)
-En general el proyecto esta pensado para ser instalado en la direccion /home/ubuntu/
+En general el proyecto esta pensado para ser clonado en la direccion /home/ubuntu/
 ## 
 ## opcionalmente - si quiere mostrar resultados o pantallazos 
 ### Estructura
