@@ -3,7 +3,7 @@ from concurrent import futures
 from grpc_config.files_pb2_grpc import getFilesServicer, add_getFilesServicer_to_server
 from grpc_config.files_pb2 import Files
 
-with open("/home/ubuntu/reto2/topicos_telematica_reto2/rpc/config.json", "r") as jsonfile:
+with open("/home/ubuntu/jgiraldop-st0263/rpc/config.json", "r") as jsonfile:
     config = json.load(jsonfile)
 
 class getFileService(getFilesServicer):

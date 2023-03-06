@@ -1,6 +1,6 @@
 import pika, os, glob, json
 
-with open("/home/ubuntu/reto2/topicos_telematica_reto2/mom/worker1/config.json", "r") as jsonfile:
+with open("/home/ubuntu/jgiraldop-st0263/mom/worker1/config.json", "r") as jsonfile:
     config = json.load(jsonfile)
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
