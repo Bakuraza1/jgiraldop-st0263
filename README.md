@@ -21,11 +21,12 @@ Entre los aspectos propuestos para la actividad se logro:
 - Balanceador de carga dentro del apiGateWay
 - Aplicacion de tolerancia a fallos en el apiGateWay
 - Creacion de script para correr todos los archivos necesarios
+- Creacion de archivos config para cada microservicio y gateweay
+- Implementacion de bootstrap en AWS. (Se realizo con user Data)
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
-- Implementacion de bootstrap en AWS.
-  Se encontraron problemas a la hora de ejecutar comandos utilizando el user Data en AWS. En mi caso particular el error consistia en que no podia utilizar las librerias de mis archivos de python.
+- Todo lo propuesto se desarrollo satisfactoriamente
 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 
@@ -35,9 +36,11 @@ En general el diseño de esta aplicacion va de acuerdo a lo propuesto en clase
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
 ## como se compila y ejecuta.
-Para complilar y ejecutar el programa primero se debe correr el script install.sh, de esta forma se instalaran todas las dependencias. Ademas en AWS se debe habilitar el puerto 8080 por TCP desde cualquier IP. 
+- Para complilar y ejecutar el programa primero se debe correr el script install.sh, de esta forma se instalaran todas las dependencias. Ademas en AWS se debe habilitar el puerto 8080 por TCP desde cualquier IP. 
 
-Posteriormente se debe correr el script run.sh, el cual correra todas los archivos de python requeridos
+- Posteriormente se debe correr el script run.sh, el cual correra todas los archivos de python requeridos
+
+- Ademas si se quiere automatizar la ejecucion de los archivos de python, de tal manera que se quiera se ejecuten cuando se inicie la instancia en AWS simplemente se debe añadir el contenido de user.txt (Archivo encontrado en este repositorio) al user Data de la instancia.
 
 ## detalles del desarrollo.
 
@@ -79,6 +82,9 @@ En general el proyecto esta pensado para ser clonado en la direccion /home/ubunt
 ## opcionalmente - si quiere mostrar resultados o pantallazos 
 ### Estructura
 ![image](https://user-images.githubusercontent.com/110442546/223045303-ccc8f88c-aaa0-4e1f-ac92-a898ded7eff8.png)
+
+## Instancia AWS
+Todo lo descrito aqui ya esta aplicado en una instancia de aws llamada st0263-jgiraldop-r2, la cual tiene como ip elastica 18.210.179.173
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
