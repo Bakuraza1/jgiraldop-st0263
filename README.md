@@ -15,7 +15,7 @@ En esta actividad se implemento un apiGateWay, el cual resolvera ciertas consult
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
 Entre los aspectos propuestos para la actividad se logro:
-- Implementacion de apiGateWat
+- Implementacion de apiGateWay
 - Implementacion de comunicacion via GRPC de ApiGateWay con microservicio
 - Implementacion de comunicacion via MOM de apiGateWay con microservicios (Se realizo con rabbitmq y el uso de colas)
 - Balanceador de carga dentro del apiGateWay
@@ -57,7 +57,7 @@ Para la comunicaicon con rabbitmq se utilizo
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 En general se tiene un archivo de configuracion para al API gateway y para cada microservicio.
-### gateWAy
+### gateWay
 - request_queue: Nombre colda de peticion
 - response_queue:Nombre cola de respuesta
 - rpc_port: puerto para la conexion rpc
@@ -83,7 +83,7 @@ En general el proyecto esta pensado para ser instalado en la direccion /home/ubu
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
 # IP o nombres de dominio en nube o en la máquina servidor.
-
+18.210.179.173
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 En el numeral anterior ya se describieeron todos los parametros y configuraciones del apigateway y de cada mciroservicio. 
 Cabe destacar que estos ya vienen configurados predeterminadamente
@@ -95,7 +95,7 @@ Cabe destacar que estos ya vienen configurados predeterminadamente
 - Correr run.sh (Ubicado en la carpeta fuente del git)
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
-
+Para que el usuario pueda acceder a los endpoints debe poner la ip y el puerto correspondiente. Ej. http://18.210.179.173:8080/listFiles
 ### Explicacion balanceador
 En este proyecto se tienen 3 microservicios, la idea es que se ira haciendo un balanceo entre el uso ded los 3, por esto cuando se hagan peticiones se mostrara el origen de la respuesta (rpc, mom1, mom2) todo con el fin de comprobar este balanceo
 
@@ -111,14 +111,19 @@ NOTA: Hay mas endpoints implementados en la aplicacion pero estos se hicieron co
 
 
 ## opcionalmente - si quiere mostrar resultados o pantallazos 
+![image](https://user-images.githubusercontent.com/110442546/223050778-5906d50a-f159-45bc-b136-e1961df68af2.png)
+![image](https://user-images.githubusercontent.com/110442546/223050815-af2bfde8-7572-4e27-ab5c-8b21c6ba36b2.png)
+![image](https://user-images.githubusercontent.com/110442546/223050854-79737619-b080-424b-91bd-7903596f7de4.png)
+![image](https://user-images.githubusercontent.com/110442546/223051939-b753c079-269a-4743-95b6-5c9028a6ede6.png)
+![image](https://user-images.githubusercontent.com/110442546/223051975-97bb17c0-c995-4b4f-9cf2-fa19cee56430.png)
+
 
 # 5. otra información que considere relevante para esta actividad.
 Todo lo relevante para esta actividad ya esta contenido en los otros numerales
 
 # referencias:
 <debemos siempre reconocer los créditos de partes del código que reutilizaremos, así como referencias a youtube, o referencias bibliográficas utilizadas para desarrollar el proyecto o la actividad>
-## sitio1-url 
-## sitio2-url
-## url de donde tomo info para desarrollar este proyecto
+## https://www.rabbitmq.com/getstarted.html
+## https://grpc.io/docs/languages/python/quickstart/
 
 #### versión README.md -> 1.0 (2022-agosto)
