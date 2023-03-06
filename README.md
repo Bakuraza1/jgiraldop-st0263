@@ -1,9 +1,9 @@
 # jgiraldop-st0263
-# info de la materia: st0263 <Topicos Especiales en Telematica>
+## info de la materia: st0263 Topicos Especiales en Telematica
 #
-# Estudiante(s): Julian Giraldo Perez, jgiraldop@eafit.edu.co
+## Estudiante(s): Julian Giraldo Perez, jgiraldop@eafit.edu.co
 #
-# Profesor: Edwin Nelson Montoya Munera, emontoya@eafit.edu.co
+## Profesor: Edwin Nelson Montoya Munera, emontoya@eafit.edu.co
 #
 
 # Reto 2, uso de RPC y MOM 
@@ -35,16 +35,20 @@ En general el diseño de esta aplicacion va de acuerdo a lo propuesto en clase
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
 ## como se compila y ejecuta.
-La siguiente explicacion se da como si se tuviera una instancia nueva de ubuntu en AWS.
+Para complilar y ejecutar el programa primero se debe correr el script install.sh, de esta forma se instalaran todas las dependencias. Ademas en AWS se debe habilitar el puerto 8080 por TCP desde cualquier IP. 
+
+Posteriormente se debe correr el script run.sh, el cual correra todas los archivos de python requeridos
 
 ## detalles del desarrollo.
 
-Este proyecto esta pensado para correr en una maquina con linux, especificamente en una maquina ubuntu de AWS.
+Este proyecto esta pensado para correr en una maquina ubuntu de AWS.
 
 ## detalles técnicos
 
-El proyecto fue desarrollado en python 3.10.6.
-La ApiGateWay se implemento utilizando Flask 2.2.3
+El proyecto fue desarrollado en:
+- python 3.10.6.
+La ApiGateWay se implemento utilizando:
+- Flask 2.2.3
 Para la comunicacion grpc se utilizaron las librerias
 - grpcio 1.51.3
 - grpc-tools 1.51.3
@@ -52,23 +56,64 @@ Para la comunicaicon con rabbitmq se utilizo
 - pika 1.3.1
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
+En general se tiene un archivo de configuracion para al API gateway y para cada microservicio.
+### gateWAy
+- request_queue: Nombre colda de peticion
+- response_queue:Nombre cola de respuesta
+- rpc_port: puerto para la conexion rpc
+- rpc_address: direccion para la conexion rpc
+- server_port: Puerto en que se despliega el servidor
+- server_address: Direccion donde se despliega el servidor
+
+### RPC microservice
+- rpc_port: Puerto para la conexion rpc
+- dir_path: path del directorio que posee los archivos
+
+### MOM microservice
+- queue: Nombre de la cola a la que escucha
+- dir_path: path del directorio que posee los archivos
+
 ## opcional - detalles de la organización del código por carpetas o descripción de algún archivo. (ESTRUCTURA DE DIRECTORIOS Y ARCHIVOS IMPORTANTE DEL PROYECTO, comando 'tree' de linux)
+En general el proyecto esta pensado para ser instalado en la direccion /home/ubuntu/
 ## 
 ## opcionalmente - si quiere mostrar resultados o pantallazos 
+### Estructura
+![image](https://user-images.githubusercontent.com/110442546/223045303-ccc8f88c-aaa0-4e1f-ac92-a898ded7eff8.png)
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
 # IP o nombres de dominio en nube o en la máquina servidor.
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
+En el numeral anterior ya se describieeron todos los parametros y configuraciones del apigateway y de cada mciroservicio. 
+Cabe destacar que estos ya vienen configurados predeterminadamente
 
 ## como se lanza el servidor.
+- Asegurarse de tener el puerto 8080 abierto apra comunicacion TCP desde cualquier ip
+- git clone de este repositorio
+- Correr install.sh (Ubicado en la carpeta fuente del git)
+- Correr run.sh (Ubicado en la carpeta fuente del git)
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
+
+### Explicacion balanceador
+En este proyecto se tienen 3 microservicios, la idea es que se ira haciendo un balanceo entre el uso ded los 3, por esto cuando se hagan peticiones se mostrara el origen de la respuesta (rpc, mom1, mom2) todo con el fin de comprobar este balanceo
+
+### Endpoints
+
+El usuario posee multiples endpoints para probar la aplicacion.
+
+NOTA: Hay mas endpoints implementados en la aplicacion pero estos se hicieron con fines de testing. como (testRPC/, textMOM/, getFileMOM/<string>, getFileRPC<string>)
+
+- /listFiles: Lista los archivos del microservicio
+- /getFiles/<string: dir>: obtiene archivos que tengan cierto nombre (no incluir extensiones). Para buscar dentro de carpetas usamos la sintaxis carpeta.archivo
+- /: Nos retornara alive si el servidor esta vivo
+
 
 ## opcionalmente - si quiere mostrar resultados o pantallazos 
 
 # 5. otra información que considere relevante para esta actividad.
+Todo lo relevante para esta actividad ya esta contenido en los otros numerales
 
 # referencias:
 <debemos siempre reconocer los créditos de partes del código que reutilizaremos, así como referencias a youtube, o referencias bibliográficas utilizadas para desarrollar el proyecto o la actividad>
