@@ -1,4 +1,3 @@
-  GNU nano 6.2                                                                                           run.sh                                                                                                    
 #!/bin/bash
 python3 ./rpc/worker.py & 
 
