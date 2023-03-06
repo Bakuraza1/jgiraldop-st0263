@@ -2,7 +2,7 @@ import pika
 import json
 class testRpcClient(object):
     def __init__(self):
-        with open("/home/ubuntu/reto2/topicos_telematica_reto2/gateWay/config.json", "r") as jsonfile:
+        with open("/home/ubuntu/jgiraldop-st0263/gateWay/config.json", "r") as jsonfile:
             self.config = json.load(jsonfile)
         self.connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
         self.channel = self.connection.channel()
