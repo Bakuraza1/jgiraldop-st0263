@@ -36,6 +36,8 @@ En general el diseño de esta aplicacion va de acuerdo a lo propuesto en clase
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
 ## como se compila y ejecuta.
+- Si no tiene el codigo fuente haga un git clone de este repositorio
+
 - Para complilar y ejecutar el programa primero se debe correr el script install.sh, de esta forma se instalaran todas las dependencias. Ademas en AWS se debe habilitar el puerto 8080 por TCP desde cualquier IP. 
 
 - Posteriormente se debe correr el script run.sh, el cual correra todas los archivos de python requeridos
