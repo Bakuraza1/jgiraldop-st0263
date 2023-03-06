@@ -7,8 +7,8 @@ sudo rabbitmq-plugins enable rabbitmq_management
 
 sudo apt install python3-pip
 
-pip3 install grpcio
-pip3 install grpcio-tools
-pip3 install protobuf==3.20.*
-pip3 install flask
-pip3 install pika
+sudo pip3 install grpcio
+sudo pip3 install grpcio-tools
+sudo pip3 install protobuf==3.20.*
+sudo pip3 install flask
+sudo pip3 install pika
