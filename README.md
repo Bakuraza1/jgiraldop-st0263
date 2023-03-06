@@ -122,7 +122,7 @@ NOTA: Hay mas endpoints implementados en la aplicacion pero estos se hicieron co
 Todo lo relevante para esta actividad ya esta contenido en los otros numerales
 
 # referencias:
-<debemos siempre reconocer los créditos de partes del código que reutilizaremos, así como referencias a youtube, o referencias bibliográficas utilizadas para desarrollar el proyecto o la actividad>
+
 ## https://www.rabbitmq.com/getstarted.html
 ## https://grpc.io/docs/languages/python/quickstart/
 
