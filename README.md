@@ -58,7 +58,7 @@ Para la comunicaicon con rabbitmq se utilizo
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 En general se tiene un archivo de configuracion para al API gateway y para cada microservicio.
 ### gateWay
-- request_queue: Nombre colda de peticion
+- request_queue: Nombre cola de peticion
 - response_queue:Nombre cola de respuesta
 - rpc_port: puerto para la conexion rpc
 - rpc_address: direccion para la conexion rpc
@@ -85,11 +85,11 @@ En general el proyecto esta pensado para ser instalado en la direccion /home/ubu
 # IP o nombres de dominio en nube o en la máquina servidor.
 18.210.179.173
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
-En el numeral anterior ya se describieeron todos los parametros y configuraciones del apigateway y de cada mciroservicio. 
+En el numeral anterior ya se describieron todos los parametros y configuraciones del apigateway y de cada mciroservicio. 
 Cabe destacar que estos ya vienen configurados predeterminadamente
 
 ## como se lanza el servidor.
-- Asegurarse de tener el puerto 8080 abierto apra comunicacion TCP desde cualquier ip
+- Asegurarse de tener el puerto 8080 abierto para comunicacion TCP desde cualquier ip
 - git clone de este repositorio
 - Correr install.sh (Ubicado en la carpeta fuente del git)
 - Correr run.sh (Ubicado en la carpeta fuente del git)
@@ -97,7 +97,7 @@ Cabe destacar que estos ya vienen configurados predeterminadamente
 ## una mini guia de como un usuario utilizaría el software o la aplicación
 Para que el usuario pueda acceder a los endpoints debe poner la ip y el puerto correspondiente. Ej. http://18.210.179.173:8080/listFiles
 ### Explicacion balanceador
-En este proyecto se tienen 3 microservicios, la idea es que se ira haciendo un balanceo entre el uso ded los 3, por esto cuando se hagan peticiones se mostrara el origen de la respuesta (rpc, mom1, mom2) todo con el fin de comprobar este balanceo
+En este proyecto se tienen 3 microservicios, la idea es que se ira haciendo un balanceo entre el uso de los 3, por esto cuando se hagan peticiones se mostrara el origen de la respuesta (rpc, mom1, mom2) todo con el fin de comprobar este balanceo
 
 ### Endpoints
 
