@@ -29,7 +29,7 @@ Para los servidores NFS y Nginx se realizo la configuracion directamente en las 
 
 Ademas para obtener el dominio se utilizo la pagina hostinger, desde la cual tambien se hace el manejo del DNS, en este caso para la configuracion del DNS se hizo un registro A que apunta a la ip del servidor Nginx.
 
-# 1.1 Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
+## 1.1 Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 En esta actividad se logro:
 - la implementacion en gcp de los 5 elementos anteriormente expuestos, a traves de la dockerizacion y/o configuracion de la vm.
 
@@ -40,7 +40,7 @@ En esta actividad se logro:
 - En cuanto a los requisitos no funcionales, entre otros, se logro que al correr las maquinas virtuales ya todos los servicios queden instanciados. 
 
 
-# 1.2 Que aspectos no cumplió o no desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
+## 1.2 Que aspectos no cumplió o no desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 De forma general se lograron todos los items propuestos en la actividad.
 
 # 2. Informacion general de diseño de alto nivel y arquitectura
@@ -269,7 +269,7 @@ La estructura del directorio cambiara en cada vm debido a las diferentes libreri
 
 ![image](https://user-images.githubusercontent.com/110442546/227306161-ba8f1096-0167-413d-92c4-318190adad6f.png)
 
-# Descripción del ambiente de EJECUCIÓN (en producción)
+4. # Descripción del ambiente de EJECUCIÓN (en producción)
 
 
 ## IP o nombres de dominio en nube o en la máquina servidor
