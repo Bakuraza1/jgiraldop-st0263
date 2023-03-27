@@ -269,7 +269,7 @@ La estructura del directorio cambiara en cada vm debido a las diferentes libreri
 
 ![image](https://user-images.githubusercontent.com/110442546/227306161-ba8f1096-0167-413d-92c4-318190adad6f.png)
 
-4. # Descripción del ambiente de EJECUCIÓN (en producción)
+#4. Descripción del ambiente de EJECUCIÓN (en producción)
 
 
 ## IP o nombres de dominio en nube o en la máquina servidor
@@ -289,4 +289,14 @@ Para utilizar la aplicacion el usuario simplemente debe ingresar a la url: jgpde
 ## Resultados o Pantallazos
 ![image](https://user-images.githubusercontent.com/110442546/227307679-f4571722-8703-4393-bdc0-2b95beb464e5.png)
 ![image](https://user-images.githubusercontent.com/110442546/227308776-34055ef8-97a2-4f05-8ff7-54cb6fbbb8af.png)
+
+#5. otra información que considere relevante para esta actividad.
+Toda la informacion importante para esta actividad esta contenida dentro del readme o en los archivos especificos del repositorio
+
+# Referencias
+- https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04
+- https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
+- https://github.com/st0263eafit/st0263-231
+#URL
+https://www.devjgp.tech/
 
