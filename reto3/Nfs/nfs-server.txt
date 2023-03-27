@@ -1,4 +1,4 @@
-Para configurar el NFS server:
+Para configurar la instancia del NFS server:
 
 1. Instalar el NFS server:
     sudo apt install nfs-kernel-server
@@ -8,3 +8,5 @@ Para configurar el NFS server:
 
 3. Reiniciar el NFS server:
     sudo systemctl restart nfs-kernel-server
+
+Cabe notar que en este caso se planea compartir los archivos de wordpress desde el NFS server a los dos clientes NFS.

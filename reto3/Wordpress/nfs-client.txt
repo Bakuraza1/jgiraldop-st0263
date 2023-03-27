@@ -3,7 +3,11 @@ Para configurar las instancias como NFS clients:
 1. Instalar nfs client corriendo 
     sudo apt install nfs-common
 
-2. Una vez creado el directorio donde se quieren guardar los archivos correr:
+2. Una vez creado el directorio donde se quieren guardar los archivos para comenzar a recibir los archivos del NFS server correr:
     sudo mount <server ip>:<path on the server> <path on client>
 
-NOTA: Para esto ya debio configurar el NFS server 
+3. Para montar los archivos automaticamente una vez se prende la instancia debemos modificar el archivo localizado en /etc/fstab de la siguiente manera:
+        client_ip:<client path>  <server path> nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
+
+NOTA: Para esto ya debio configurar el NFS server. Ademas para cumplir el proposito de este reto asegurese de que el volumen del docker-compose apunte en su maquina
+a la direccion donde se montara el directorio del NFS server.

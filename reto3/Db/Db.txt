@@ -1,0 +1,6 @@
+1. Clonar el repositorio
+
+2. Ir a la carpeta db y correr el docker compose:
+    run:   docker-compose -f docker-compose up
+
+3. Asegurarse que los credenciales sean los mismo que los que tiene en el docker-compose ded wordpress

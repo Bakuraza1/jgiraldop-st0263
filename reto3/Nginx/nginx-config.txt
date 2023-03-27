@@ -4,7 +4,7 @@
 
 2. Para configurar nginx copiar y pegar el contenido de nginxconf dentro de etc/nginx/nginx.conf
 
-3. To create the SSL certificate install certbot
+3. Para crear un certificado SSL certificate instalar certbot
     sudo apt install certbot python3-certbot-nginx
 
 4. revisar el archivo nginx.conf para asegurarse que el server_name sea el mismo dominio para generar SSL

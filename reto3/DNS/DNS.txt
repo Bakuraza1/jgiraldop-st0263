@@ -1,0 +1,3 @@
+1. Para la configuracion del DNS primero debe adquirir un nombre de dominio, esto a traves de cualquier plataforma.
+
+2. Posterior a esto debe configurar su DNS con un registro A, de tal forma que este apunte a la direccion IP publica del nginx server
