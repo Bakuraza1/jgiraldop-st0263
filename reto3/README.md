@@ -297,6 +297,8 @@ Toda la informacion importante para esta actividad esta contenida dentro del rea
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04
 - https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
 - https://github.com/st0263eafit/st0263-231
+
+
 #URL
 https://www.devjgp.tech/
 
