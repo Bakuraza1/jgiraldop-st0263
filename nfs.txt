@@ -1,0 +1,6 @@
+LABEL=cloudimg-rootfs   /        ext4   defaults        0 1
+LABEL=UEFI      /boot/efi       vfat    umask=0077      0 1
+
+#Aqui debera remplazar los datos por la ip de su NFS server, el mounting point y el directorio creado en el cliente
+
+10.95.44.66:/mynfs /mnt/filedir/ nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
