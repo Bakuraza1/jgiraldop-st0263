@@ -228,7 +228,7 @@ Para utilizar la aplicacion el usuario simplemente debe ingresar a la url: jgpde
 ![image](https://user-images.githubusercontent.com/110442546/235378812-d40b2bd4-cda7-4f7b-843d-678a39852c94.png)
 
 
-#5. otra información que considere relevante para esta actividad.
+# 5. otra información que considere relevante para esta actividad.
 
 Este proyecto ya no esta desplegado debido a que este consumia demasiado creditos de GCP
 
