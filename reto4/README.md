@@ -201,7 +201,7 @@ Para el balanceador se configuro que el backend fuera el grupo de instancias ant
 ## Estructura de directorios y archivos importantes del proyecto
 En este proyecto no hay una estructura de directorios fija ya que todo se distribuyo a traves de diferentes maquinas y servicios.
 
-#4. Descripción del ambiente de EJECUCIÓN (en producción)
+# 4. Descripción del ambiente de EJECUCIÓN (en producción)
 
 
 ## IP o nombres de dominio en nube o en la máquina servidor
