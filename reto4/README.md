@@ -242,3 +242,6 @@ Este proyecto ya no esta desplegado debido a que este consumia demasiado credito
 # URL
 https://www.devjgp.tech/
 
+# Video
+https://youtu.be/mhHFo52om7k
+
